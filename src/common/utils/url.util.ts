@@ -1,0 +1,1 @@
+export const MAX_URL_LENGTH = 2048;
