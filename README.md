@@ -154,13 +154,7 @@ npm run start:prod
 
 - `npm run start` - Start application
 - `npm run start:dev` - Start in watch mode
-- `npm run start:debug` - Start in debug mode
 - `npm run build` - Build TypeScript to `dist`
-- `npm run lint` - Run ESLint with autofix
-- `npm run format` - Format source and test files
-- `npm run test` - Run unit tests
-- `npm run test:e2e` - Run end-to-end tests
-- `npm run test:cov` - Generate coverage report
 
 ## Caching Strategy
 
@@ -204,15 +198,10 @@ Redirect (follow manually in browser):
 curl -i http://localhost:3000/urls/a1B2c3D
 ```
 
-## Future Improvements
+## 5 minute video explaining codebase
 
-- Add custom aliases for short codes
-- Add URL expiration and soft delete
-- Add rate limiting and request throttling middleware
-- Add Swagger/OpenAPI documentation
-- Add analytics breakdown by date and referrer
-- Introduce database migrations for production workflows
+https://youtu.be/tbRuBz5xXAo
 
 ## License
 
-This project is for assessment and portfolio demonstration purposes.
+UNLICENSED
