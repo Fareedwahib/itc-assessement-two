@@ -31,7 +31,6 @@ export class RedisService {
     try {
       await this.client.set(key, value, 'EX', ttlSeconds);
     } catch {
-      // Ignore cache failures so the application still works without Redis.
     }
   }
 }

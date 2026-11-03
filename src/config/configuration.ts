@@ -11,7 +11,6 @@ import {
   validateSync,
 } from 'class-validator';
 
-/** Shape and rules for the environment variables the app reads. */
 class EnvironmentVariables {
   @IsOptional() @IsIn(['development', 'production', 'test']) NODE_ENV?: string;
   @IsOptional() @IsInt() @Min(1) @Max(65535) PORT?: number;
@@ -36,7 +35,6 @@ class EnvironmentVariables {
   @IsOptional() @IsInt() @Min(1) THROTTLE_LIMIT?: number;
 }
 
-/** Fails fast at boot with a readable message instead of crashing later on `undefined`. */
 export function validateEnv(config: Record<string, unknown>): Record<string, unknown> {
   const instance = plainToInstance(EnvironmentVariables, config, {
     enableImplicitConversion: true,
